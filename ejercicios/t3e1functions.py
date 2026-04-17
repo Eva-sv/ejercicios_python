@@ -11,10 +11,10 @@ def Calculate_Total_Price (unit_price, produt_quantity):
 
 def Calculate_discount (total_price, discount_percentage):
     result = total_price * discount_percentage
-    return result 
+    return result
 
 def Calculate_final_price (total_price, discount,vat):
-    result = total_price * discount * vat
+    result = (total_price - discount) + vat
     return result
 
 
