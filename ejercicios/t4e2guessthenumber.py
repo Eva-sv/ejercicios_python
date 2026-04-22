@@ -2,8 +2,11 @@ def guessNumber(number):
     if (number == 4):
         message = "You have won"
     
-    elif (number == 1,2,3,5,6,7,8,9,10):
+    elif (number in [1,2,3,5,6,7,8,9,10]):
         message = "You have lost"
+
+    else:
+        message = "Incorrect number"
     return message
 
 
